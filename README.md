@@ -4,7 +4,7 @@ A Tkinter-based GUI application that predicts and visualizes lifetime salary tra
 
 ---
 
-## 📌 Features
+##  Features
 
 -  **Dynamic college search** via keyword input  
 -  **Major selection** tailored to the chosen college  
@@ -18,7 +18,7 @@ A Tkinter-based GUI application that predicts and visualizes lifetime salary tra
 
 ---
 
-## 📂 Dataset
+##  Dataset
 
 The application uses a CSV file named `engineering_salaries.csv`, which should contain the following columns:
 
@@ -31,7 +31,7 @@ Ensure the CSV is placed in the correct directory (adjust the file path in the s
 
 ---
 
-## 🛠 Requirements
+##  Requirements
 
 - Python 3.x  
 - `pandas`  
@@ -43,7 +43,7 @@ Install dependencies with:
 ```
 pip install pandas numpy matplotlib
 ```
-
+---
 ### How to Run
 Clone or download this repository.
 
@@ -54,6 +54,7 @@ Run the main script:
 
 python main.py
 ```
+---
 ### Usage Instructions
 Launch the application.
 
@@ -64,6 +65,7 @@ Select a university from the dropdown.
 Choose an engineering major offered at that university.
 
 View a graph of projected salary over a 40-year career.
+---
 
  ### Salary Projection Logic
 Years 0–1: Salary remains constant at the 1-year median
@@ -71,13 +73,14 @@ Years 0–1: Salary remains constant at the 1-year median
 Years 2–5: Salary increases linearly from 1-year to 5-year median
 
 Years 6–40: Salary grows 3% annually, compounded from the 5-year value
-
+---
  ### Notes
 - The GUI is fully resizable and follows a multi-screen layout for a step-by-step experience.
 
 - You can adapt the application for a different dataset (e.g., including 10-year salaries) by updating the CSV file and modifying the relevant logic in the code.
 
-
+---
 
 ### License
 This project is licensed under the MIT License.
+---

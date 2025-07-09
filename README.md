@@ -40,8 +40,9 @@ Ensure the CSV is placed in the correct directory (adjust the file path in the s
 
 Install dependencies with:
 
-```bash
-pip install pandas numpy matplotlib ```
+```
+pip install pandas numpy matplotlib
+```
 
 ### How to Run
 Clone or download this repository.
@@ -49,12 +50,10 @@ Clone or download this repository.
 Open a terminal and navigate to the project directory.
 
 Run the main script:
+```
 
-bash
-Copy
-Edit
 python main.py
-
+```
 ### Usage Instructions
 Launch the application.
 

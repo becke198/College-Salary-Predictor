@@ -1,69 +1,82 @@
 # Engineering Salary Trajectory Visualizer
 
-This is a Tkinter-based GUI application that predicts and visualizes lifetime salary trajectories for engineering graduates based on their selected university and major. It uses an Excel-based dataset to generate a dynamic salary projection over a 40-year career span and presents the data in a line plot using Matplotlib.
+A Tkinter-based GUI application that predicts and visualizes lifetime salary trajectories for engineering graduates, based on selected universities and majors. It reads data from a CSV file and plots a 40-year salary projection using Matplotlib.
 
-## Features
+---
 
-- Dynamic college search using keyword input
-- Dropdown selection of engineering majors specific to the chosen college
-- Salary visualization using 1-year and 5-year median salaries
-- Career earnings projection using an exponential growth model (3% annual increase after year 5)
-- Interactive, multi-screen GUI built with Tkinter
+## 📌 Features
 
-## Dataset
+-  **Dynamic college search** via keyword input  
+-  **Major selection** tailored to the chosen college  
+-  **Salary visualization** using median 1-year and 5-year salaries  
+-  **Career earnings projection** using:
+  - Constant salary (Years 0–1)
+  - Linear growth (Years 2–5)
+  - 3% annual exponential growth (Years 6–40)  
+- 🖥 **Multi-screen interactive GUI** built with Tkinter  
+-  **Responsive layout** with support for window resizing  
 
-The application uses a CSV file that includes the following columns:
+---
 
-- University
-- Engineering Major
-- Median 1-Year Salary
-- Median 5-Year Salary
+## 📂 Dataset
 
-Make sure the dataset is named `engineering_salaries.csv` and is located at the correct path (modify the path in the script if necessary).
+The application uses a CSV file named `engineering_salaries.csv`, which should contain the following columns:
 
-## Requirements
+- `University`
+- `Engineering Major`
+- `Median 1-Year Salary`
+- `Median 5-Year Salary`
 
-- Python 3.x
-- pandas
-- numpy
-- matplotlib
+Ensure the CSV is placed in the correct directory (adjust the file path in the script if needed).
 
-## Installation
+---
 
-1. Clone the repository or download the project files.
-2. Install the required libraries:
+## 🛠 Requirements
 
- 
+- Python 3.x  
+- `pandas`  
+- `numpy`  
+- `matplotlib`  
+
+Install dependencies with:
+
+```bash
 pip install pandas numpy matplotlib
-Run the Python file:
+🚀 How to Run
+Clone or download this repository.
 
+Open a terminal and navigate to the project directory.
 
+Run the main script:
+
+bash
+Copy
+Edit
 python main.py
-Usage
-Start the application.
+💡 Usage Instructions
+Launch the application.
 
-Enter a keyword to search for a college.
+Enter a keyword to search for a university.
 
-Select a college from the dropdown menu.
+Select a university from the dropdown.
 
-Choose an engineering major offered by that college.
+Choose an engineering major offered at that university.
 
-View a graph of the predicted salary over a 40-year career.
+View a graph of projected salary over a 40-year career.
 
-The salary trajectory is calculated using the following logic:
+ ### Salary Projection Logic
+Years 0–1: Salary remains constant at the 1-year median
 
-Years 0–1: Constant at 1-year median salary
+Years 2–5: Salary increases linearly from 1-year to 5-year median
 
-Years 2–5: Linear growth from 1-year to 5-year median salary
+Years 6–40: Salary grows 3% annually, compounded from the 5-year value
 
-Years 6–40: Compounded annual 3% growth from 5-year salary
+ ### Notes
+- The GUI is fully resizable and follows a multi-screen layout for a step-by-step experience.
 
-Notes
-GUI supports window resizing and includes three screens for step-by-step input and output. 
+- You can adapt the application for a different dataset (e.g., including 10-year salaries) by updating the CSV file and modifying the relevant logic in the code.
 
-To use a different dataset or add more columns (e.g., 10-year salary), update the CSV and modify the corresponding functions.
 
-License
-This project is released under the MIT License.
 
-Let me know if you'd like to include instructions for bundling this into a `.exe` or `.app`, or if you wan
+### License
+This project is licensed under the MIT License.

@@ -13,7 +13,7 @@ A Tkinter-based GUI application that predicts and visualizes lifetime salary tra
   - Constant salary (Years 0–1)
   - Linear growth (Years 2–5)
   - 3% annual exponential growth (Years 6–40)  
-- 🖥 **Multi-screen interactive GUI** built with Tkinter  
+-  **Multi-screen interactive GUI** built with Tkinter  
 -  **Responsive layout** with support for window resizing  
 
 ---
@@ -44,7 +44,7 @@ Install dependencies with:
 pip install pandas numpy matplotlib
 ```
 ---
-### How to Run
+## How to Run
 Clone or download this repository.
 
 Open a terminal and navigate to the project directory.
@@ -55,7 +55,7 @@ Run the main script:
 python main.py
 ```
 ---
-### Usage Instructions
+## Usage Instructions
 Launch the application.
 
 Enter a keyword to search for a university.
@@ -65,16 +65,18 @@ Select a university from the dropdown.
 Choose an engineering major offered at that university.
 
 View a graph of projected salary over a 40-year career.
+
 ---
 
- ### Salary Projection Logic
+ ## Salary Projection Logic
 Years 0–1: Salary remains constant at the 1-year median
 
 Years 2–5: Salary increases linearly from 1-year to 5-year median
 
 Years 6–40: Salary grows 3% annually, compounded from the 5-year value
+
 ---
- ### Notes
+ ## Notes
 - The GUI is fully resizable and follows a multi-screen layout for a step-by-step experience.
 
 - You can adapt the application for a different dataset (e.g., including 10-year salaries) by updating the CSV file and modifying the relevant logic in the code.

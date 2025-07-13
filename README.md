@@ -2,6 +2,8 @@
 
 A Tkinter-based GUI application that predicts and visualizes lifetime salary trajectories for engineering graduates, based on selected universities and majors. It reads data from a CSV file and plots a 40-year salary projection using Matplotlib.
 
+[Project_4_Report_becke198__3_.pdf](https://github.com/becke198/College-Salary-Predictor/blob/main/Project_4_Report_becke198__3_.pdf)
+
 ---
 
 ##  Features
